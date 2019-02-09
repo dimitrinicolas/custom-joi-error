@@ -1,0 +1,47 @@
+{
+  "name": "custom-joi-error",
+  "version": "1.0.0",
+  "description": "Customize Joi errors, by stripping quotes and setting key specific error language.",
+  "author": "Dimitri NICOLAS <dimitri@ooeo.fr>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "joi",
+    "validation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitrinicolas/custom-joi-error.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dimitrinicolas/custom-joi-error/issues"
+  },
+  "homepage": "https://github.com/dimitrinicolas/custom-joi-error",
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "lint": "tslint --project \"./tsconfig.json\"",
+    "test": "nyc --reporter=lcov --reporter=text ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "publish": "clean-publish --files .nyc_output coverage"
+  },
+  "devDependencies": {
+    "@types/joi": "^14.3.1",
+    "@types/node": "^10.12.21",
+    "ava": "^1.2.1",
+    "clean-publish": "^1.0.9",
+    "coveralls": "^3.0.2",
+    "joi": "^14.3.1",
+    "nyc": "^13.2.0",
+    "prettier": "^1.16.4",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.3.1"
+  },
+  "dependencies": {
+    "@types/object-path": "^0.11.0",
+    "object-path": "^0.11.4"
+  }
+}
