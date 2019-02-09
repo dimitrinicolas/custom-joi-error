@@ -1,6 +1,6 @@
 .DS_Store
 tmp
-di
+dist
 
 node_modules
 .npm-debug.log
